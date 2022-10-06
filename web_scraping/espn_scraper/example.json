@@ -1,0 +1,58 @@
+[
+  {
+    "Name": "Steve",
+    "Last name": "Rogers",
+    "Age": 102,
+    "isAvernger": true,
+    "Friends": ["Bucky", "tony", "Bruce"],
+    "Address": { "City": "Brooklyn", "State": "NewYork" }
+  },
+  {
+    "Name": "Tony",
+    "Last name": "Stark",
+    "Age": 40,
+    "isAvernger": true,
+    "Friends": ["Bucky", "tony", "Bruce"],
+    "Address": { "City": "Manhattan", "State": "NewYork" }
+  },
+  {
+    "Name": "peter",
+    "Last name": "Parker",
+    "Age": 21,
+    "isAvernger": true,
+    "Friends": ["Bucky", "tony", "Bruce"],
+    "Address": { "City": "Manhattan", "State": "NewYork" }
+  },
+  {
+    "Name": "thor",
+    "Last name": "Odinson",
+    "Age": 2000,
+    "isAvernger": true,
+    "Friends": ["Bucky", "tony", "Bruce"],
+    "Address": { "City": "Manhattan", "State": "NewYork" }
+  },
+  {
+    "Name": "Bruce",
+    "Last name": "banner",
+    "Age": 45,
+    "isAvernger": true,
+    "Friends": ["Bucky", "tony", "Bruce"],
+    "Address": { "City": "queens", "State": "NewYork" }
+  },
+  {
+    "Name": "Honey",
+    "Last name": "Singh",
+    "Age": 55,
+    "isAvernger": false,
+    "Friends": ["Badshah", "gippy", "none"],
+    "Address": { "City": "bharat", "State": "bharat" }
+  },
+  {
+    "Name": "Honey",
+    "Last name": "Singh",
+    "Age": 55,
+    "isAvernger": false,
+    "Friends": ["Badshah", "gippy", "none"],
+    "Address": { "City": "bharat", "State": "bharat" }
+  }
+]
