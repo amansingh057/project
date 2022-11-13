@@ -1,11 +1,13 @@
 import React from "react";
 import logo from "../images/tinder_logo_white.png";
 import colorLogo from "../images/color-logo-tinder.png";
-const Nav = ({ minimal, authToken, setshowModal,showModal }) => {
+const Nav = ({ minimal, setshowModal,showModal,setIsSignup }) => {
   // const minimal = true
   function handleClick() {
     setshowModal(true);
+    setIsSignup(false)
   }
+  const authToken = true
   return (
     <nav>
       <div className="logo-container">

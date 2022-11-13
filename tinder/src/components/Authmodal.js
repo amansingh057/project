@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 
-const Authmodal = ({setshowModal}) => {
+const Authmodal = ({setshowModal,setIsSignup,isSignUp}) => {
     const [email,setEmail] = useState(null)
     const [password,setPassword] = useState(null)
     const [confirm,setConfirm] = useState(null)
     const[error,setError] = useState(null)
-    const isSignUp = true
     console.log(email,password,confirm)
     function handleClick(){
         setshowModal(false)
+        setIsSignup(true)
     }
     function handleSubmit(e){
         e.preventDefault()
@@ -43,14 +43,14 @@ const Authmodal = ({setshowModal}) => {
             required={true}
             onChange={(e) => setPassword(e.target.value)}
             />
-            <input
+            {isSignUp && <input
             type='password'
             id='password-check'
             name='password-check'
             placeholder='confirm password'
             required={true}
             onChange={(e) => setConfirm(e.target.value)}
-            />
+            />}
             <input className='secondary-button' type='submit'/>
             <p>{error}</p>
         </form>
