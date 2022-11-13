@@ -88,7 +88,7 @@ const Onboarding = () => {
                 name="gender_identity"
                 value="man"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_identity==='man'}
               />
               <label htmlFor="man-gender-identity">Man</label>
               <input
@@ -97,7 +97,7 @@ const Onboarding = () => {
                 name="gender_identity"
                 value="woman"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_identity==='woman'}
               />
               <label htmlFor="woman-gender-identity">Woman</label>
               <input
@@ -106,7 +106,7 @@ const Onboarding = () => {
                 name="gender_identity"
                 value="more"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_identity==='more'}
               />
               <label htmlFor="more-gender-identity">More</label>
             </div>
@@ -117,7 +117,7 @@ const Onboarding = () => {
               type="checkbox"
               name="show_gender"
               onChange={handleChange}
-              checked={false}
+              checked={formData.show_gender}
             />
 
             <label>Show me</label>
@@ -128,7 +128,7 @@ const Onboarding = () => {
                 name="gender_interest"
                 value="man"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_interest==='man'}
               />
               <label htmlFor="man-gender-interest">Man</label>
               <input
@@ -137,7 +137,7 @@ const Onboarding = () => {
                 name="gender_interest"
                 value="woman"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_interest==='woman'}
               />
               <label htmlFor="woman-gender-interest">Woman</label>
               <input
@@ -146,9 +146,9 @@ const Onboarding = () => {
                 name="gender_interest"
                 value="everyone"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_interest==='everyone'}
               />
-              <label htmlFor="more-gender-interest">Everyone</label>
+              <label htmlFor="everyone-gender-interest">Everyone</label>
             </div>
             <label htmlFor="about">About me</label>
             <input

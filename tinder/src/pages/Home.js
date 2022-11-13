@@ -4,7 +4,7 @@ import Nav from "../components/Nav";
 
 const Home = () => {
   const [showModal, setshowModal] = useState(false);
-  const [isSignUp,setIsSignup] = useState(true)
+  const [isSignUp, setIsSignup] = useState(true);
   const authToken = false;
   function handleClick() {
     console.log("Clicked");
@@ -23,7 +23,13 @@ const Home = () => {
         <button className="primary-button" onClick={handleClick}>
           {authToken ? "Signout" : "Create Account"}
         </button>
-        {showModal && <Authmodal setshowModal={setshowModal} setIsSignup={setIsSignup} isSignUp={isSignUp} />}
+        {showModal && (
+          <Authmodal
+            setshowModal={setshowModal}
+            setIsSignup={setIsSignup}
+            isSignUp={isSignUp}
+          />
+        )}
       </div>
     </div>
   );
